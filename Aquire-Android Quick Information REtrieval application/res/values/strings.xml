@@ -1,0 +1,15 @@
+<resources>
+
+    <string name="app_name">Aquire</string>
+    <string name="hello_world">AQUIRE</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_aquire">Aquire</string>
+    <string-array name="questions">        
+        <item>Mother Native</item>
+        <item>Father Native</item>
+        <item>Favourite Movie</item>
+        <item>Favourite Game</item>
+        <item>Library Number</item>        
+    </string-array>
+
+</resources>

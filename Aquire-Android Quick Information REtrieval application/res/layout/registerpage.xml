@@ -1,0 +1,94 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbarAlwaysDrawVerticalTrack="true" >
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="0dip"
+        android:layout_marginTop="0dip"
+        android:background="#ffffff"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="15dip"
+            android:text="Settings" />
+        
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#2a2a2a"
+            android:gravity="center"
+            android:padding="15dip"
+            android:text="Help"
+            android:textColor="#ffffff" />
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/editText1registeruser"
+        android:layout_width="260dp"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="60dp"
+        android:ems="10"
+        android:hint="Email "
+        android:inputType="textEmailAddress" />    
+      <EditText
+        android:id="@+id/editText2password"
+        android:layout_width="260dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/editText1registeruser"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:hint="5 digit password"
+        android:inputType="textPassword" />
+    <EditText
+        android:id="@+id/editText3confirmpassword"
+        android:layout_width="260dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/editText2password"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="14dp"
+        android:ems="10"
+        android:hint="confirm password"
+        android:inputType="textPassword" />
+    <Spinner
+        android:id="@+id/spinner1question"
+        android:layout_width="260dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editText3confirmpassword"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="14dp"
+        android:entries="@array/questions"
+        tools:listitem="@android:layout/simple_spinner_dropdown_item" />
+    <EditText
+        android:id="@+id/answer"
+        android:layout_width="260dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/spinner1question"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="14dp"
+        android:ems="10"
+        android:hint="Answer" />
+    <Button
+        android:id="@+id/sendmessage"
+        android:layout_width="260dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/answer"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="18dp"
+        android:text="Save" />
+
+</RelativeLayout>
