@@ -1,0 +1,48 @@
+<!--
+Author: Miren Tanna
+NET ID: mat130830
+Description: XML Document to design the layout of Menu for Main Activity.
+Menu items are assigned icons and string names using drawable and string XMLs.
+
+-->
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/newnote"
+        android:orderInCategory="10"
+        android:icon="@android:drawable/ic_menu_add"
+        android:showAsAction="always"
+		android:title="@string/menu_new"/>
+    <item 
+        android:id="@+id/savenote"
+        android:orderInCategory="50"
+        android:icon="@drawable/save"
+        android:showAsAction="always" 
+        android:title="@string/saveNoteButton"/>
+    <item
+        android:id="@+id/viewrecent"
+        android:orderInCategory="200"
+        android:icon="@drawable/view_recent_1"
+        android:showAsAction="always" 
+        android:title="@string/menu_viewrecent"/>
+	<item 
+	    android:id="@+id/saveas"
+	    android:orderInCategory="100"
+	    android:icon="@drawable/save_as1"
+	    android:showAsAction="always" 
+	    android:title="@string/menu_saveas"/>
+	<item 
+	    android:id="@+id/help"
+	    android:orderInCategory="300"
+	    android:icon="@android:drawable/ic_menu_help"
+	    android:showAsAction="never" 
+	    android:title="@string/menu_help"/>
+    <item 
+	    android:id="@+id/exit"
+	    android:orderInCategory="400"
+	    android:icon="@drawable/exit2"
+	    android:showAsAction="always" 
+	    android:title="@string/menu_exit"/>
+    
+</menu>

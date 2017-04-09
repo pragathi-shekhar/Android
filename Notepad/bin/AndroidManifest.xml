@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.utd.notepadui"
+    android:installLocation="preferExternal"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="19" 
+		android:label="@string/app_title"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/pencil_icon"
+        android:label="@string/app_title"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.utd.notepadui.MainActivity"
+            android:label="@string/app_title" 
+            android:noHistory="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.utd.notepadui.SecondActivity"
+            android:label="@string/app_title"
+            android:noHistory="true"
+            android:parentActivityName="com.utd.notepadui.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.utd.notepadui.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.utd.notepadui.CustomHelpDialog"
+            android:label="@string/title_activity_custom_help_dialog" >
+        </activity>
+        <activity
+            android:name="com.utd.notepadui.SaveNewNoteActivity"
+            android:label="@string/title_activity_save_new_note" >
+        </activity>
+        <activity
+            android:name="com.utd.notepadui.HelpDialogBoxActivity"
+            android:label="@string/title_activity_help_dialog_box" >
+        </activity>
+        <activity
+            android:name="com.utd.notepadui.ReadNoteActivity"
+            android:label="@string/app_title" 
+            android:parentActivityName="com.utd.notepadui.SecondActivity"
+            android:noHistory="true">
+        </activity>
+    </application>
+
+</manifest>

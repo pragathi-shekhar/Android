@@ -1,0 +1,159 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:dc="http://purl.org/dc/elements/1.1/"
+  xmlns:seinfeld="http://www.seinfeld.com/seinfeld/"
+  xmlns:foaf="http://xmlns.com/foaf/0.1/"
+  xmlns:ppl="http://www.randompeople.com/ppl/"
+  xmlns:job="http://www.job.com/job/"
+  xml:base="http://org.semwebprogramming/chapter2/people">
+
+   <rdf:Description rdf:about="seinfeld:Jerry">
+      <rdf:type rdf:resource="foaf:Person"/>
+      <foaf:surname>Seinfeld</foaf:surname>
+      <ppl:hasJob rdf:resource="job:Comedian"/>
+      <ppl:hasAge>31</ppl:hasAge> 
+
+      <foaf:knows rdf:resource="seinfeld:George"/>
+      <foaf:knows rdf:resource="seinfeld:Elaine"/>        
+      <foaf:knows rdf:resource="seinfeld:Kramer"/>    
+
+      <ppl:hasNeighbor rdf:resource="seinfeld:Kramer"/>    
+      
+      <ppl:hasMother>Helen</ppl:hasMother>
+      <ppl:hasFather>Morty</ppl:hasFather>
+      <ppl:hasUncle>Leo</ppl:hasUncle>
+      <ppl:hasCousin>Jeffrey</ppl:hasCousin>
+      
+   </rdf:Description>
+
+   <rdf:Description rdf:about="seinfeld:George">
+      <rdf:type rdf:resource="foaf:Person"/>
+      <foaf:surname>Constanza</foaf:surname>
+      <foaf:knows rdf:resource="seinfeld:Elaine"/>        
+      <foaf:knows rdf:resource="seinfeld:Kramer"/>     
+      <foaf:knows rdf:resource="seinfeld:Jerry"/> 
+      
+      <ppl:hasAge>31</ppl:hasAge> 
+
+      <ppl:enemiesWith rdf:resource="seinfeld:Newman"/>    
+
+      <ppl:engagedTo rdf:resource="seinfeld:Susan"/>
+      
+      <ppl:hasJob rdf:resource="job:RealEstateAgent"/>
+      <ppl:hasJob rdf:resource="job:MarineBiologist"/>
+      <ppl:hasJob rdf:resource="job:YankeesEmployee"/>       
+      
+      <ppl:hasMother>Estelle</ppl:hasMother>
+      <ppl:hasFather>Frank</ppl:hasFather>             
+     
+   </rdf:Description>
+
+   <rdf:Description rdf:about="seinfeld:Elaine">
+
+      <rdf:type rdf:resource="foaf:Person"/>
+      <foaf:surname>Benes</foaf:surname>
+      
+      <foaf:knows rdf:resource="seinfeld:George"/>        
+      <foaf:knows rdf:resource="seinfeld:Kramer"/>     
+      <foaf:knows rdf:resource="seinfeld:Jerry"/>     
+
+      <ppl:hasJob rdf:resource="job:Writer"/>
+      
+      <ppl:hasAge>30</ppl:hasAge> 
+
+      <ppl:hasDated>
+         <rdf:Seq>
+            <rdf:li rdf:resource="seinfeld:David"/>
+            <rdf:li rdf:resource="seinfeld:Jake"/>
+            <rdf:li rdf:resource="seinfeld:Maestro"/>
+         </rdf:Seq>
+      </ppl:hasDated>   
+      
+      <ppl:hasFather>Alton</ppl:hasFather> 
+      <ppl:hasCousin>Gail</ppl:hasCousin>    
+
+   </rdf:Description>
+
+   <rdf:Description rdf:about="seinfeld:Kramer">
+      <rdf:type rdf:resource="foaf:Person"/>
+      <foaf:name>Cosmo</foaf:name>
+
+      <foaf:surname>Kramer</foaf:surname>      
+      <ppl:hasAge>37</ppl:hasAge> 
+      
+      <foaf:knows rdf:resource="seinfeld:George"/>        
+      <foaf:knows rdf:resource="seinfeld:Elaine"/>     
+      <foaf:knows rdf:resource="seinfeld:Jerry"/>     
+
+      <ppl:hasJob rdf:resource="job:Unemployed"/>
+      <ppl:hasNeighbor rdf:resource="seinfeld:Jerry"/>
+      <ppl:friendsWith rdf:resource="seinfeld:Newman"/>  
+      
+      <ppl:hasMother>Babs</ppl:hasMother>  
+
+   </rdf:Description>
+
+   <rdf:Description rdf:about="seinfeld:Susan">
+      <rdf:type rdf:resource="foaf:Person"/>
+      <foaf:surname>Ross</foaf:surname>
+      <rdf:type rdf:resource="seinfeld:SubCharacter"/>   
+   </rdf:Description>
+   
+   <rdf:Description rdf:about="seinfeld:David">
+      <rdf:type rdf:resource="foaf:Person"/>
+      <foaf:surname>Puddy</foaf:surname>
+      <rdf:type rdf:resource="seinfeld:SubCharacter"/>   
+   </rdf:Description>
+
+   <rdf:Description rdf:about="seinfeld:Jake">
+      <rdf:type rdf:resource="foaf:Person"/>
+      <foaf:surname>Jarmell</foaf:surname>
+      <rdf:type rdf:resource="seinfeld:SubCharacter"/>   
+   </rdf:Description>
+
+   <rdf:Description rdf:about="seinfeld:Maestro">
+      <rdf:type rdf:resource="foaf:Person"/>
+      <foaf:name>Bob</foaf:name>
+      <foaf:surname>Cobb</foaf:surname>
+      <rdf:type rdf:resource="seinfeld:SubCharacter"/>   
+   </rdf:Description>
+   
+   <rdf:Description rdf:about="job:RealEstateAgent">
+      <job:salary>45000</job:salary>  
+   </rdf:Description>
+   
+   <rdf:Description rdf:about="job:MarineBiologist">
+      <job:salary>55000</job:salary>  
+   </rdf:Description>
+   
+   
+    <rdf:Description rdf:about="job:YankeesEmployee">
+      <job:salary>65000</job:salary>  
+      <job:organization>New York Yankees</job:organization>
+      <job:boss>George Steinbrenner</job:boss>
+   </rdf:Description>
+   
+   
+   <rdf:Description rdf:about="job:Unemployed">
+      <job:salary>0</job:salary>  
+      <job:boss>Nobody</job:boss>
+   </rdf:Description>
+   
+   
+      <rdf:Description rdf:about="job:Writer">
+      <job:salary>25000</job:salary>  
+      <job:organization>Pendant Publishing</job:organization>
+      <job:boss>Mr. Littman</job:boss>
+      
+   </rdf:Description>
+   
+
+    <rdf:Description rdf:about="job:Comedian">
+      <job:salary>15000</job:salary>  
+   </rdf:Description>
+
+   
+   
+   
+
+</rdf:RDF>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+Author: Miren Tanna
+NET ID: mat130830
+Description: XML Document to design the layout of Menu for Read Note Activity.
+Menu items are assigned icons and string names using drawable and string XMLs.
+-->
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/newnote"
+        android:icon="@android:drawable/ic_menu_add"
+        android:orderInCategory="10"
+        android:showAsAction="always"
+        android:title="@string/menu_new"/>
+    <item
+        android:id="@+id/help"
+        android:icon="@android:drawable/ic_menu_help"
+        android:orderInCategory="300"
+        android:showAsAction="never"
+        android:title="@string/menu_help"/>
+    <item
+        android:id="@+id/exit"
+        android:icon="@drawable/exit2"
+        android:orderInCategory="400"
+        android:showAsAction="always"
+        android:title="@string/menu_exit"/>
+
+</menu>
